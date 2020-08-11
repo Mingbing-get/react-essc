@@ -1,0 +1,153 @@
+.model-shadow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 200;
+}
+
+.model-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 1rem;
+    min-width: 2rem;
+    background-color: rgb(255,255,255);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 0.2rem rgba(0,0,0,0.5);
+    padding: 0.1rem;
+    border-radius: 0.05rem;
+}
+
+.model-box .model-header {
+    padding-left: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.model-box .model-header .model-icon {
+    display: none;
+}
+
+.model-box .model-header .model-close {
+    float: right;
+    display: block;
+    cursor: pointer;
+    padding: 0.03rem 0.08rem;
+    border-radius: 0.03rem;
+}
+
+.model-box .model-header .model-close:hover {
+    background-color: rgba(200,200,200,0.4);
+    color: red;
+}
+
+.model-box .model-body {
+    padding: 0.05rem 0;
+    text-align: center;
+    flex: 1;
+}
+
+.model-box .model-footer {
+    padding-top: 0.1rem;
+    padding-bottom: 0.05rem;
+    text-align: right;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.model-box .model-footer button {
+    font-size: 0.16rem;
+    padding: 0.05rem 0.1rem;
+    margin: 0 0.05rem;
+    background-color: #40a9ff;
+    border: none;
+    border-radius: 0.05rem;
+}
+
+.model-box .model-footer button:first-child {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+}
+
+/*扩展样式*/
+.model-box .model-header.model-success .model-icon::after,
+.model-box .model-header.model-error .model-icon::after,
+.model-box .model-header.model-waring .model-icon::after {
+    font: normal normal normal 0.14rem/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.model-box .model-header.model-success,
+.model-box .model-header.model-error,
+.model-box .model-header.model-waring {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.model-box .model-header.model-success .model-icon,
+.model-box .model-header.model-error .model-icon,
+.model-box .model-header.model-waring .model-icon {
+    display: inline-block;
+    margin-right: 0.1rem;
+}
+
+.model-box .model-header.model-success .model-close,
+.model-box .model-header.model-error .model-close,
+.model-box .model-header.model-waring .model-close {
+    display: none;
+}
+
+.model-box .model-body.model-success,
+.model-box .model-body.model-error,
+.model-box .model-body.model-waring {
+    padding-left: 0.2rem;
+    text-align: left;
+}
+
+/*success*/
+.model-box .model-header.model-success .model-icon::after {
+    content: "\f058";
+}
+
+.model-box .model-header.model-success {
+    color: green;
+}
+
+.model-box .model-body.model-success {
+    color: green;
+}
+
+/*waring*/
+.model-box .model-header.model-waring .model-icon::after {
+    content: "\f06a";
+}
+
+.model-box .model-header.model-waring {
+    color: rgba(200,200,0,0.6);
+}
+
+.model-box .model-body.model-waring {
+    color: rgba(200,200,0,0.6);
+}
+
+/*error*/
+.model-box .model-header.model-error .model-icon::after {
+    content: "\f00d";
+    text-shadow: 0 0 0.04rem rgba(0,0,0,0.4);
+}
+
+.model-box .model-header.model-error {
+    color: red;
+}
+
+.model-box .model-body.model-error {
+    color: red;
+}

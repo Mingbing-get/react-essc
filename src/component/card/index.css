@@ -1,0 +1,23 @@
+.cardBox {
+
+}
+
+.clearFix::after {
+    content: '.';
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    display: block;
+}
+
+.cardBox .cardBoxHead {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(200,200,200,0.6);
+}
+
+.cardBox .cardBoxHead h3 {
+    padding-left: 10px;
+    border-left: 6px solid rgba(200,0,0,0.6);
+    color: rgba(200,0,0,0.6);
+}

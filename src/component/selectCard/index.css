@@ -1,0 +1,46 @@
+.selectcard-box {
+    margin-top: 0.05rem;
+    padding: 0.05rem;
+    padding-left: 0;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectcard-box>img {
+    height: 1rem;
+}
+
+.selectcard-box .selectcard-info {
+    flex: 1;
+    margin-left: 0.05rem;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.selectcard-box .selectcard-info p:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.selectcard-box .selectcard-info p:last-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgba(255,0,0,0.85);
+}
+
+.selectcard-box .selectcard-info>p>span {
+    font-size: 0.12rem;
+    margin-left: 0.05rem;
+    text-decoration: line-through;
+    color: initial;
+}
+
+.selectcard-box .selectcard-info>span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,32 @@
+.register-box {
+    padding: 0.05rem;
+}
+
+.register-box .register-title {
+    font-size: 0.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.register-box .register-radio-box {
+    text-align: center;
+}
+
+.register-box .register-radio-box input {
+    margin: 0 0.1rem;
+}
+
+.register-box .register-radio-box label {
+    margin-right: 0.1rem;
+}
+
+.register-box .register-btn {
+    text-align: center;
+}
+
+.register-box .register-btn button {
+    padding: 0.03rem 0.1rem;
+    background-color: #40a9ff;
+    border: none;
+    outline-color: #40a9ff;
+}

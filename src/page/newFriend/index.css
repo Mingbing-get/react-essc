@@ -1,0 +1,70 @@
+.newfriend-add {
+    display: flex;
+    flex-direction: row;
+    padding: 0.05rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+
+.newfriend-add>div {
+    flex: 1;
+}
+
+.newfriend-add>button {
+    padding: 0 0.05rem;
+    margin: 0.05rem 0;
+    margin-right: 0.05rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    background-color: #40a9ff;
+    border-radius: 0.05rem;
+    border: none;
+    outline: none;
+}
+
+.newfriend-addme-box {
+
+}
+
+.newfriend-addme-box .newfriend-addme-item {
+    margin: 0.05rem;
+    padding: 0.05rem;
+    border-radius: 0.05rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.newfriend-addme-box .newfriend-addme-item div:first-child {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.newfriend-addme-box .newfriend-addme-item .info {
+    margin: 0 0.05rem;
+    flex: 1;
+}
+
+.newfriend-addme-box .newfriend-addme-item .info p{
+    font-size: 0.12rem;
+}
+
+.newfriend-addme-box .newfriend-addme-item>button {
+    padding: 0.05rem 0.1rem;
+    line-height: 0.12rem;
+    height: 0.24rem;
+    font-size: 0.12rem;
+    border-radius: 0.17rem;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #fff;
+}
+
+.newfriend-addme-box .newfriend-addme-item>span {
+    font-size: 0.12rem;
+}

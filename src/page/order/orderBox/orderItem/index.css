@@ -1,0 +1,36 @@
+.order-item {
+    padding: 0.05rem 0;
+    margin: 0.05rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.order-item img {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.order-item .order-item-info {
+    flex: 1;
+    margin-left: 0.05rem;
+    position: relative;
+}
+
+.order-item .order-item-info>span {
+    color: #666;
+    font-size: 0.14rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.order-item .order-item-info>i {
+    color: orangered;
+    font-size: 0.16rem;
+    font-style: normal;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,32 @@
+.serch {
+    padding: 0.05rem 0.1rem;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+/*设置input的样式*/
+.serch_input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.14rem;
+    line-height: 0.2rem;
+    padding-left: 0.21rem;
+}
+.serch_input:hover {
+    outline: 1px solid #40a9ff;
+}
+.serch_input:focus {
+    outline: 1px solid #40a9ff;
+}
+/*设置收缩图标的样式*/
+.serch_span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0.05rem;
+    color: rgba(0,0,0,0.4);
+}
+
+.serch_span::before {
+    width: 0.16rem;
+}

@@ -1,0 +1,21 @@
+.clearBtn,
+.deleteBtn {
+    background-color: rgb(230,0,0);
+    border: none;
+    outline: none;
+    font-size: 0.12rem;
+    padding: 0.02rem 0.05rem;
+    border-radius: 0.02rem;
+}
+
+.clearBtn {
+    float: right;
+}
+
+.nothingHistory {
+    font-size: 0.12rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

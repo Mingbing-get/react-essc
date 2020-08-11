@@ -1,0 +1,53 @@
+.actionbar-box {
+    position: fixed;
+    bottom: 0.44rem;
+    padding: 0.05rem;
+    background-color: rgba(0,0,0,0.1);
+    margin-bottom: 1px;
+    width: 100%;
+    height: 0.31rem;
+
+    z-index: 200;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.actionbar-box .actionbar-select-all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.actionbar-box .actionbar-count,
+.actionbar-box .actionbar-del {
+    flex: 1;
+    text-align: right;
+    padding-right: 0.15rem;
+}
+
+.actionbar-box .actionbar-count span{
+    font-size: 0.12rem;
+    color: rgba(255,0,0,0.85);
+    margin-right: 0.05rem;
+}
+
+.actionbar-box .actionbar-count button{
+    padding: 0.05rem 0.2rem;
+    background-color: orangered;
+    border: none;
+    outline: none;
+    border-radius: 0.15rem;
+    color: white;
+}
+
+.actionbar-box .actionbar-del button {
+    padding: 0 0.1rem;
+    border: 1px solid orangered;
+    background-color: #fff;
+    outline: none;
+    border-radius: 0.1rem;
+    color: orangered;
+}
+

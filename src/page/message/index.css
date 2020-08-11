@@ -1,0 +1,45 @@
+.essc-message-firden {
+    margin-bottom: 0.44rem;
+}
+
+.friends-box {
+    display: flex;
+    flex-direction: row;
+    padding: 0.05rem;
+    margin: 0.05rem 0;
+    background-color: rgba(200,200,200,0.1);
+
+    position: relative;
+}
+
+.friends-box div:first-child {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.05rem;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.friends-box .friends-info {
+    flex: 1;
+}
+
+.friends-box>span {
+    position: absolute;
+    top: 50%;
+    right: 0.05rem;
+    transform: translateY(-50%);
+
+    display: inline-block;
+    height: 0.16rem;
+    line-height: 0.16rem;
+    padding: 0 0.05rem;
+    background-color: red;
+    border-radius: 0.08rem;
+    color: white;
+
+    font-size: 0.12rem;
+}

@@ -1,0 +1,42 @@
+.detail-all-box {
+    margin-bottom: 0.42rem;
+}
+
+.detail-box {
+    margin: 0.05rem 0;
+    padding: 0.05rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.detail-box .detail-price>p {
+    font-size: 0.14rem;
+    word-break: break-all;
+}
+
+.detail-box .detail-price>p:first-child {
+    font-size: 0.16rem;
+    color: rgba(255,0,0,0.85);
+}
+
+.detail-box .detail-price>p:first-child>span {
+    font-size: 0.12rem;
+    color: black;
+    margin-left: 0.05rem;
+    text-decoration: line-through;
+}
+
+.detail-box .detail-count {
+    margin-top: 0.05rem;
+}
+
+.detail-box .detail-count::after {
+    content: '.';
+    visibility: hidden;
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.detail-box .detail-count .count-box {
+    float: right;
+}

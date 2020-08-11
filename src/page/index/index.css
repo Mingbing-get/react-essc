@@ -1,0 +1,28 @@
+.index-box {
+    padding-top: 0.44rem;
+    padding-bottom: 0.44rem;
+    z-index: 1000;
+}
+
+.index-topBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.index-history {
+    cursor: pointer;
+}
+
+.index-history:hover{
+    color: #40a9ff;
+}
+
+.index-serch-button {
+    background-color: #40a9ff;
+    border: none;
+    padding: 0.03rem 0.1rem;
+    font-size: 0.14rem;
+    outline: none;
+}

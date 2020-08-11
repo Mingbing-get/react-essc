@@ -1,0 +1,17 @@
+.mine-box {
+    margin-bottom: 0.44rem;
+}
+
+.mine-box .huizhang {
+    float: right;
+    display: inline-block;
+    padding: 0 0.05rem;
+    height: 0.16rem;
+    line-height: 0.16rem;
+    background-color: red;
+    text-align: center;
+    border-radius: 0.08rem;
+    color: white;
+    font-size: 0.12rem;
+    margin-top: 0.02rem;
+}

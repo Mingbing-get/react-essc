@@ -1,0 +1,93 @@
+.sarousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+/*图片的样式*/
+.sarousel .img-box {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sarousel .img-box li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.sarousel .img-box li a img{
+    vertical-align: top;
+    width: 100%;
+}
+
+.sarousel .img-box li div{
+    position: absolute;
+    text-align: center;
+    bottom: 0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(0,0,0,0.6);
+    max-width: 50%;
+}
+
+.sarousel .img-box li div h4,
+.sarousel .img-box li div p {
+    margin: 0.1rem 0;
+}
+
+/*点的样式*/
+.sarousel .point-box {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 0.1rem;
+}
+
+.sarousel .point-box li {
+    float: left;
+    padding: 0.05rem;
+}
+
+.sarousel .point-box li a {
+    display: block;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.sarousel .point-box li a.active {
+    background-color: rgba(255,0,0,0.8);
+}
+/*左右按钮的样式*/
+.sarousel .move-left,
+.sarousel .move-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.7);
+    font-size: 0.6rem;
+    border-radius: 0.05rem;
+    display: none;
+}
+
+.sarousel .move-left {
+    left: 0;
+}
+
+.sarousel .move-right {
+    right: 0;
+}
+
+.sarousel:hover .move-left,
+.sarousel:hover .move-right {
+    display: block;
+}

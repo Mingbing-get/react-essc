@@ -1,0 +1,49 @@
+.message-box {
+    padding: 0.1rem 0.2rem;
+    font-size: 0.12rem;
+    line-height: 0.16rem;
+    border-radius: 0.18rem;
+    box-shadow: 0 0 0.1rem rgba(0,0,0,0.4);
+    background-color: #fff;
+    color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+}
+
+.message-box .message-icon::after {
+    font: normal normal normal 0.14rem/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 0.16rem;
+
+    margin-right: 0.05rem;
+}
+
+.message-box .message-icon::after {
+    color: #40a9ff;
+    content: "\f05a";
+}
+
+/*success*/
+.message-box.message-success .message-icon::after {
+    color: green;
+    content: "\f058";
+}
+
+/*waring*/
+.message-box.message-waring .message-icon::after {
+    color: rgba(200,200,0,0.6);
+    content: "\f06a";
+}
+
+/*error*/
+.message-box.message-error .message-icon::after {
+    color: red;
+    content: "\f00d";
+    text-shadow: 0 0 0.05rem rgba(0,0,0,0.4);
+}

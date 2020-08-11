@@ -1,0 +1,93 @@
+.input-point-box {
+    margin: 0.05rem;
+}
+
+.input-point-box.shake {
+    animation: box-shake 0.5s linear;
+}
+/*定义摇头动画*/
+@keyframes box-shake {
+    0%{transform: translateX(0);}
+    5%{transform: translateX(-0.1rem);}
+    15%{transform: translateX(0.1rem);}
+    25%{transform: translateX(-0.08rem);}
+    35%{transform: translateX(0.08rem);}
+    45%{transform: translateX(-0.06rem);}
+    55%{transform: translateX(0.06rem);}
+    65%{transform: translateX(-0.04rem);}
+    75%{transform: translateX(0.04rem);}
+    85%{transform: translateX(-0.02rem);}
+    95%{transform: translateX(0.02rem);}
+    100%{transform: translateX(0);}
+}
+
+.input-box {
+    width: 100%;
+    position: relative;
+}
+
+.input-box input {
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 0.2rem;
+    padding: 0 0.05rem;
+    margin: 0;
+}
+
+.input-box input:hover,
+.input-box input:focus {
+    outline: 1px solid #40a9ff;
+}
+
+/*扩展样式*/
+.input-box.error::after,
+.input-box.success::after {
+    font: normal normal normal 0.14rem/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    position: absolute;
+    top: 50%;
+    right: 0.05rem;
+    transform: translateY(-50%);
+}
+
+/*error*/
+.input-box.error input {
+    outline: 1px solid red;
+}
+
+.input-box.error::after {
+    color: red;
+    content: "\f00d";
+    text-shadow: 0 0 0.05rem rgba(0,0,0,0.4);
+}
+
+/*success*/
+.input-box.success input {
+    outline: 1px solid green;
+}
+
+.input-box.success::after {
+    color: green;
+    content: "\f058";
+}
+
+/*point*/
+.input-point {
+    font-size: 0.12rem;
+    padding: 0.03rem;
+    display: none;
+}
+
+.input-point.error {
+    display: block;
+    color: red;
+}
+
+.input-point.success {
+    display: block;
+    color: green;
+}

@@ -1,0 +1,21 @@
+.login-box {
+    padding: 0.05rem;
+}
+
+.login-box .login-title {
+    font-size: 0.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-box .login-btn {
+    text-align: center;
+}
+
+.login-box .login-btn button {
+    padding: 0.03rem 0.1rem;
+    background-color: #40a9ff;
+    border: none;
+    outline-color: #40a9ff;
+    margin: 0 0.05rem;
+}

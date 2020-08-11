@@ -1,0 +1,33 @@
+.router-box {
+    display: flex;
+    flex-direction: row;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    z-index: 1000;
+
+    background-color: #fff;
+}
+
+.router-box a{
+    flex: 1;
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+    font-size: 0.12rem;
+    text-decoration: none;
+    padding: 0.1rem 0;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.router-box a::before {
+    font-size: 0.24rem;
+    margin-right: 0.05rem;
+}
+
+.router-box a:hover,
+.router-box a.active {
+    color: #40a9ff;
+    background-color: #fff;
+}

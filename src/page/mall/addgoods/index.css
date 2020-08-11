@@ -1,0 +1,87 @@
+.add-goods-area {
+    padding: 0.05rem;
+}
+
+.add-goods-area textarea {
+    display: block;
+    width: 100%;
+    padding-left: 0.05rem;
+}
+
+.add-goods-area textarea:focus {
+    outline-color: #40a9ff;
+}
+
+.add-goods-pic {
+    margin: 0.05rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.add-goods-pic label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.add-goods-pic div {
+    margin: 0 0.05rem;
+    width: 0.5rem;
+    height: 0.5rem;
+
+    position: relative;
+
+    text-align: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+}
+
+.add-goods-pic div span {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.add-goods-pic div span::before,
+.add-goods-pic div::after {
+    font: normal normal normal 0.14rem/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.add-goods-pic div::after {
+    content: "\f196";
+    font-size: 0.5rem;
+    color: rgba(0,0,0,0.4);
+}
+
+.add-goods-pic div span::before {
+    content: "\f00d";
+    color: red;
+    font-size: 0.18rem;
+    text-shadow: 0 0 0.03rem rgba(0,0,0,0.4);
+}
+
+.add-goods-pic div.have::after {
+    display: none;
+}
+
+.add-goods-pic input {
+    display: none;
+}
+
+.add-goods-btn {
+    padding: 0.05rem 0;
+    width: 100%;
+    background-color: #40a9ff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 0.05rem;
+}

@@ -1,0 +1,21 @@
+.count-box {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+}
+
+.count-box button {
+    padding: 0.03rem 0.1rem;
+    outline: none;
+}
+
+.count-box button:disabled {
+    cursor: not-allowed;
+    color: rgba(0,0,0,0.3);
+}
+
+.count-box span {
+    padding: 0.03rem 0.1rem;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}

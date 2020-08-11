@@ -1,0 +1,65 @@
+.talk-box {
+    width: 100%;
+}
+
+.talk-box .talk-header {
+    padding: 0.1rem 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 0.05rem;
+}
+
+.talk-box .talk-content {
+    overflow-y: auto;
+    padding: 0 0.05rem;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 0.05rem;
+}
+
+.talk-box .talk-content .talk-content-more {
+    text-align: center;
+    font-size: 0.1rem;
+}
+
+.talk-box .talk-footer {
+    display: flex;
+    position: relative;
+}
+
+.talk-box .talk-footer>span {
+    position: absolute;
+    left: 0.02rem;
+    top: -0.18rem;
+
+    display: inline-block;
+    padding: 0 0.05rem;
+    height: 0.16rem;
+    line-height: 0.16rem;
+    font-size: 0.12rem;
+    border-radius: 0.08rem;
+    background-color: red;
+
+    color: white;
+}
+
+.talk-box .talk-footer input {
+    line-height: 0.3rem;
+    padding-left: 0.05rem;
+    flex: 1;
+}
+
+.talk-box .talk-footer input:hover,
+.talk-box .talk-footer input:focus {
+    outline: #40a9ff;
+}
+
+.talk-box .talk-footer button {
+    background-color: #40a9ff;
+    width: 0.5rem;
+    border: none;
+}
+
+.talk-box .talk-footer button:focus {
+    outline: none;
+}
+

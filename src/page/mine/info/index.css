@@ -1,0 +1,21 @@
+.info-box {
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    border-top: 1px solid rgba(0,0,0,0.4);
+    padding: 0.05rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-box img {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+}
+
+.info-box .info-right {
+    margin-left: 0.1rem;
+    flex: 1;
+    font-weight: bold;
+}

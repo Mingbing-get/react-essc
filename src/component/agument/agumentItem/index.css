@@ -1,0 +1,53 @@
+.agument-item {
+    width: 100%;
+    display: flex;
+    padding-top: 0.05rem;
+    margin: 0.05rem 0;
+}
+
+.agument-item::after {
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.agument-item .agument-left {
+    width: 0.5rem;
+    margin-right: 0.1rem;
+}
+
+.agument-item .agument-left img {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+
+.agument-item .agument-right {
+    flex: 1;
+    padding-top: 0.08rem;
+}
+
+.agument-item .agument-right h5 {
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.agument-item .agument-right span {
+    font-size: 0.1rem;
+    color: rgba(0,0,0,0.6);
+
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.agument-item .agument-right p {
+    font-size: 0.14rem;
+    color: rgba(0,0,0,0.6);
+    margin-top: 0.1rem;
+}
